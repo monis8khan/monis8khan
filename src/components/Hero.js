@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from './common/Button'
 
 export const Hero = () => {
   return (
@@ -10,7 +11,7 @@ export const Hero = () => {
                 Hello, I am
             </p>
             <h1 className="text-skin-base font-bold text-5xl uppercase">
-                Monis Hasan Khan
+                Monis <br />Hasan Khan
             </h1>
             <p className="text-skin-base">
                 Developer | JavaScript | TailwindCSS | Angular | Typescript | Linux
@@ -51,11 +52,13 @@ export const Hero = () => {
 
             {/* <!-- hire now and email button --> */}
             <div className="w-full pt-10">
-                <button
+                {/* <button
                     className="bg-skin-button-accent px-5 py-2 rounded-full right-0 text-base text-skin-base font-bold hover:text-skin-inverted hover:bg-skin-button-accent-hover">Hire
-                    now!</button>
-                <button className="border-2 border-skin-button-accent px-5 py-2 rounded-full right-0 text-base text-skin-base 
-                    font-bold hover:text-skin-inverted hover:bg-skin-button-accent-hover ml-2">BOOK A MEETING!</button>
+                    now!</button> */}
+                    <Button text={"Hire Now!"} btnPrimary={true} link="#Home" />
+                    <Button text={"Book a Meeting!"} link="#Home" />
+                {/* <button className="border-2 border-skin-button-accent px-5 py-2 rounded-full right-0 text-base text-skin-base 
+                    font-bold hover:text-skin-inverted hover:bg-skin-button-accent-hover ml-2">BOOK A MEETING!</button> */}
             </div>
         </div>
         {/* <!-- image section --> */}
