@@ -1,12 +1,12 @@
 export const ServiceCard = ({name, description, image, id}) => {
     return (
         <div
-            className={id%2 ===0 ? "flex items-center container mx-auto py-10 px-20 mb-10 sm:flex-row flex-col hover:-translate-y-1 border-t-2 border-inherit" : 
-            "flex items-center container mx-auto py-10 px-20 mb-10 sm:flex-row-reverse flex-col hover:-translate-y-1 border-t-2 border-inherit"}>
+            className={id%2 ===0 ? "flex items-center container mx-auto py-10 md:px-20 mb-10 sm:flex-row flex-col hover:-translate-y-1 border-t-2 border-inherit" : 
+            "flex items-center container mx-auto py-10 md:px-20 mb-10 sm:flex-row-reverse flex-col hover:-translate-y-1 border-t-2 border-inherit"}>
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 className="text-skin-base text-2xl text-underline mb-3 font-bold underline">{name}
+                <h2 className="text-skin-base text-base md:text-2xl text-underline mb-3 font-bold underline">{name}
                 </h2>
-                <p className="text-skin-base">{description}
+                <p className="text-skin-base text-xs md:text-base">{description}
                 </p>
                 <a href="#Portfolio"
                     className="mt-3 text-skin-inverted inline-flex items-center hover:translate-x-1 hover:text-skin-base hover:px-3 hover:rounded-full">Hire
