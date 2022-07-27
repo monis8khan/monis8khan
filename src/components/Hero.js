@@ -27,13 +27,8 @@ export const Hero = ({ icons }) => {
 
                 {/* <!-- hire now and email button --> */}
                 <div className="w-full pt-10">
-                    {/* <button
-                    className="bg-skin-button-accent px-5 py-2 rounded-full right-0 text-base text-skin-base font-bold hover:text-skin-inverted hover:bg-skin-button-accent-hover">Hire
-                    now!</button> */}
                     <Button text={"Hire Now!"} btnPrimary={true} link="#Home" />
                     <Button text={"Book a Meeting!"} link="#Home" />
-                    {/* <button className="border-2 border-skin-button-accent px-5 py-2 rounded-full right-0 text-base text-skin-base 
-                    font-bold hover:text-skin-inverted hover:bg-skin-button-accent-hover ml-2">BOOK A MEETING!</button> */}
                 </div>
             </div>
             {/* <!-- image section --> */}
