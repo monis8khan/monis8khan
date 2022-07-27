@@ -7,7 +7,7 @@ import dummy from './assets/dummy.png'
 
 export const Portfolio = () => {
     return (
-        <section id="portfolio" className="mt-10">
+        <section id="Portfolio" className="mt-10">
             <div className="container mx-auto flex flex-row py-10">
                 <div className="w-1/2">
                     <h3 className="text-skin-base text-lg font-semibold uppercase">

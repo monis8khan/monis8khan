@@ -5,23 +5,19 @@ import { SocialIcons } from './common/SocialIcons'
 export const Hero = ({ icons }) => {
 
     return (
-        <div className="container mx-auto flex flex-row mt-10" id="Hero">
+        <div className="container mx-auto flex flex-col-reverse md:flex-row mt-10 px-2" id="Hero">
             {/* <!-- intro and social buttons --> */}
-            <div className="w-1/2 flex flex-col justify-center">
+            <div className="flex flex-col justify-center text-skin-base text-center mt-10 md:text-left md:w-1/2 md:mt-0 text-xs md:text-lg">
                 {/* <!-- intro  --> */}
-                <p className="text-skin-base">
-                    Hello, I am
-                </p>
-                <h1 className="text-skin-base font-bold text-5xl uppercase">
+                Hello, I am
+                <span className="font-bold text-3xl md:text-5xl uppercase">
                     Monis <br />Hasan Khan
-                </h1>
-                <p className="text-skin-base">
-                    Developer | JavaScript | TailwindCSS | Angular | Typescript | Linux
-                </p>
+                </span>
+                Developer | JavaScript | TailwindCSS | Angular | Typescript | Linux
 
 
                 {/* <!-- social icons --> */}
-                <div className="w-full pt-5 flex flex-row">
+                <div className="w-full pt-5 flex flex-row justify-center md:justify-start">
                     {icons.map((icon) => (<SocialIcons key={icon.id} icon={icon.svg} link={icon.url} classes='fill-red-800 ml-4 first:ml-0' />))}
                 </div>
 
@@ -32,7 +28,7 @@ export const Hero = ({ icons }) => {
                 </div>
             </div>
             {/* <!-- image section --> */}
-            <div className="shadow-2xl shadow-red-900 rounded-full w-1/2 hover:-translate-y-6">
+            <div className="shadow-2xl shadow-red-900 rounded-full md:w-1/2 hover:-translate-y-6">
                 {/* <!-- shape --> */}
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#9B0000"

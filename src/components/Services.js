@@ -3,7 +3,7 @@ import { ServiceCard } from "./common/ServiceCard"
 
 export const Services = ({services}) => {
     return (
-        <section className="text-skin-base font-poppins" id="services">
+        <section className="text-skin-base font-poppins" id="Services">
             <div className="container px-5 py-24 mx-auto text-center">
                 <h1 className="text-skin-base text-4xl font-semibold p-10 uppercase">
                     Services I offer
