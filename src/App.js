@@ -9,6 +9,37 @@ import { useState } from "react";
 
 
 function App() {
+
+  //Data For Services
+  const [services, setServices] = useState([
+    {
+        id:1,
+        name:"Web Designing",
+        description:`A creative and attractive website can not only showcase the
+        creative side of your brand but also elaborate what you specialize in.
+        I will Design your website the way you want, either a landing page to a full E-Commerce
+        Application, using different themes or PSD, XD, Figma mockups.`,
+        image: "https://reboot.flowhcm.com/ThemeLayout/images/undraw/posting-photo.png"
+    },
+    {
+        id:2,
+        name:"Web Engineering",
+        description:`A creative and attractive website can not only showcase the
+        creative side of your brand but also elaborate what you specialize in.
+        I will Design your website the way you want, either a landing page to a full E-Commerce
+        Application, using different themes or PSD, XD, Figma mockups.`,
+        image: "https://reboot.flowhcm.com/ThemeLayout/images/undraw/posting-photo.png"
+    },
+    {
+        id:3,
+        name:"Web Engineering",
+        description:`A creative and attractive website can not only showcase the
+        creative side of your brand but also elaborate what you specialize in.
+        I will Design your website the way you want, either a landing page to a full E-Commerce
+        Application, using different themes or PSD, XD, Figma mockups.`,
+        image: "https://reboot.flowhcm.com/ThemeLayout/images/undraw/posting-photo.png"
+    }
+])
   //-- data for icons 
   const [icons] = useState([
     // {
@@ -70,7 +101,7 @@ function App() {
       <Header />
       <Hero icons={icons} />
       <About />
-      <Services />
+      <Services services={services}/>
       <CTA title="Want to discuss about your project?"
         desc="Lets talk in detail, I am free tomorrow. Can you do?"
         btnText="Book A Meeting!" />

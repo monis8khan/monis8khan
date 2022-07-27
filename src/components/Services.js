@@ -1,61 +1,15 @@
+import { useState } from "react"
+import { ServiceCard } from "./common/ServiceCard"
 
-export const Services = () => {
-  return (
-    <section className="text-skin-base font-poppins" id="services">
-    <div className="container px-5 py-24 mx-auto text-center">
-        <h1 className="text-skin-base text-4xl font-semibold p-10 uppercase">
-            Services I offer
-        </h1>
-        <div
-            className="flex items-center container mx-auto py-10 px-20 mb-10 sm:flex-row flex-col hover:-translate-y-1 border-t-2">
-            <div
-                className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-white flex-shrink-0">
-                {/* <img src="../assets/WEB.svg" alt="website" className="h-10 text-skin-base"> */}
+export const Services = ({services}) => {
+    return (
+        <section className="text-skin-base font-poppins" id="services">
+            <div className="container px-5 py-24 mx-auto text-center">
+                <h1 className="text-skin-base text-4xl font-semibold p-10 uppercase">
+                    Services I offer
+                </h1>
+                    {services.map((service) => (<ServiceCard key={service.id.toString()} name={service.name}  description={service.description} image={service.image} id={service.id}/>))}
             </div>
-            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 className="text-skin-base text-2xl text-underline mb-3 font-bold underline">Web Designing
-                </h2>
-                <p className="leading-relaxed text-base">A creative and attractive website can not only showcase the
-                    creative side of your brand but also elaborate what you specialize in.
-                    I will Design your website the way you want, either a landing page to a full E-Commerce
-                    Application, using different themes or PSD, XD, Figma mockups.
-                </p>
-                <a href="#Porfolio"
-                    className="mt-3 text-skin-inverted inline-flex items-center hover:translate-x-1 hover:text-skin-base hover:px-3 hover:rounded-full">Hire
-                    Now
-                    {/* <svg stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg> */}
-                </a>
-            </div>
-        </div>
-        <div
-            className="flex items-center container mx-auto py-10 px-20 mb-10 sm:flex-row flex-colsa hover:-translate-y-1 border-t-2 border-inherit">
-            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 className="text-skin-base text-2xl text-underline mb-3 font-bold underline">Web Development
-                </h2>
-                <p className="text-skin-base">This is most common when a website is not user-friendly, making
-                    it tough for visitors to browse. I am here to help you with all of your issues.
-                    I will develop your website in a way so that a user will have the best experience, either a
-                    landing page to a full E-Commerce
-                    Application.
-                </p>
-                <a href="#Portfolio"
-                    className="mt-3 text-skin-inverted inline-flex items-center hover:translate-x-1 hover:text-skin-base hover:px-3 hover:rounded-full">Hire
-                    Now
-                    {/* <svg stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg> */}
-                </a>
-            </div>
-            <div
-                className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-white flex-shrink-0">
-                {/* <img src="./assets/web-design.svg" alt="website" className="h-10 text-skin-base"> */}
-            </div>
-        </div>
-    </div>
-</section>
-  )
+        </section>
+    )
 }
