@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { ServiceCard } from "./common/ServiceCard"
 
 export const Services = ({services}) => {

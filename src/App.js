@@ -7,11 +7,18 @@ import { Portfolio } from "./components/Portfolio";
 import { Footer } from "./components/Footer";
 import { useState } from "react";
 
+//-- 
+import angularBootstrap from './components/assets/angularPortfolio.png'
+import bodykits4u from './components/assets/bodykits4u.PNG'
+import tailwind from './components/assets/tailwind.PNG'
+// import wixPortfolio from './components/assets/wixPortfolio.png'
+// import dummy from 'components/assets/dummy.png'
+
 
 function App() {
 
   //Data For Services
-  const [services, setServices] = useState([
+  const [services] = useState([
     {
       id: 1,
       name: "Web Designing",
@@ -96,6 +103,25 @@ function App() {
 
     // }
   ])
+  //-- data for portfolio 
+  const [portfolios] = useState([
+    {
+      id: "1",
+      image: angularBootstrap,
+      name: "Angular Bootstrap Portfolio",
+      url: "https://monis8khan.github.io/get_bootstrapped/",
+      featured: false
+    },
+    {
+      id: "2",
+      image: bodykits4u,
+      name: "Bodykits4You!",
+      url: "https://monis8khan.github.io/get_bootstrapped/",
+      featured: true
+    }
+  ])
+
+
   return (
     <div className="bg-skin-fill font-poppins">
       <Header />
@@ -105,7 +131,7 @@ function App() {
       <CTA title="Want to discuss about your project?"
         desc="Lets talk in detail, I am free tomorrow. Can you do?"
         btnText="Book A Meeting!" />
-      <Portfolio />
+      <Portfolio portfolios={portfolios}/>
       <CTA title="Lets get your project done!"
         desc="If it is what you require? Hit me up right now!"
         btnText="Hire Me Now!" />
