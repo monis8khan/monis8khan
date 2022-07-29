@@ -11,8 +11,8 @@ import { useState } from "react";
 import angularBootstrap from './components/assets/angularPortfolio.png'
 import bodykits4u from './components/assets/bodykits4u.PNG'
 import tailwind from './components/assets/tailwind.PNG'
-// import wixPortfolio from './components/assets/wixPortfolio.png'
-// import dummy from 'components/assets/dummy.png'
+import wixPortfolio from './components/assets/wixPortfolio.png'
+import dummy from './components/assets/dummy.png'
 
 
 function App() {
@@ -110,14 +110,30 @@ function App() {
       image: angularBootstrap,
       name: "Angular Bootstrap Portfolio",
       url: "https://monis8khan.github.io/get_bootstrapped/",
-      featured: false
+    },
+    // {
+    //   id: "2",
+    //   image: bodykits4u,
+    //   name: "Bodykits4You!",
+    //   url: "#",
+    // },
+    {
+      id: "3",
+      image: wixPortfolio,
+      name: "Wix Portfolio",
+      url: "https://dev8egg.wixsite.com/portfolio",
     },
     {
-      id: "2",
-      image: bodykits4u,
-      name: "Bodykits4You!",
-      url: "https://monis8khan.github.io/get_bootstrapped/",
-      featured: true
+      id: "4",
+      image: tailwind,
+      name: "React Tailwind Portfolio!",
+      url: "#",
+    },
+    {
+      id: "5",
+      image: dummy,
+      name: "Dummy Website",
+      url: "#",
     }
   ])
 

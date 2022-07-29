@@ -1,55 +1,26 @@
-import React, { useEffect } from 'react'
-import angularBootstrap from './assets/angularPortfolio.png'
-import bodykits4u from './assets/bodykits4u.PNG'
-import tailwind from './assets/tailwind.PNG'
+import React from 'react'
 import { PortfolioCard } from './common/PortfolioCard'
-// import wixPortfolio from './assets/wixPortfolio.png'
-// import dummy from './assets/dummy.png'
+import { Button } from './common/Button'
+
 
 export const Portfolio = ({ portfolios }) => {
-    const sendFeatured = () => {
-        return portfolios.filter((portfolio) => (portfolio.featured))
-    }
     return (
-        <section id="Portfolio" className="mt-10">
-            <div className="container mx-auto flex flex-row py-10">
-                <div className="w-1/2">
-                    <h3 className="text-skin-base text-lg font-semibold uppercase">
+        <section id="Portfolio" className="m-10">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 text-center md:text-left">
+                <div className='py-10'>
+                    <h3 className="text-skin-base text-sm md:text-lg font-semibold uppercase">
                         - my work
                     </h3>
-                    <h1 className="text-skin-base text-4xl font-semibold uppercase">
+                    <h1 className="text-skin-base text-lg md:text-4xl font-semibold uppercase">
                         Portfolio
                     </h1>
-
-                    <p className="leading-relaxed text-skin-base mt-10">A gallery of work I have done for my clients
+                    <p className="leading-relaxed text-skin-base text-xs md:text-lg my-4 md:my-10">A gallery of work I have done for my clients
                     </p>
+                    <Button text={"Hire Now!"} btnPrimary={true} link="#Home" />
+                    <Button text={"Book a Meeting!"} link="#Home" />
                 </div>
-                <PortfolioCard featured={sendFeatured()} />
+                {portfolios.map((portfolio)=>(<PortfolioCard key={portfolio.id} portfolio={portfolio} />))}
             </div>
-            <div className="container mx-auto flex flex-row py-10">
-                <div className="w-1/2 pr-10 -mt-40">
-                    <div className="rounded-lg h-80 overflow-hidden">
-                        <img src={bodykits4u} alt="bodykits" width="100%" />
-                    </div>
-                </div>
-                <div className="w-1/2 pl-10">
-                    <div className="rounded-lg h-80 overflow-hidden">
-                        <img src={tailwind} alt="angularBootstrap" width="100%" />
-                    </div>
-                </div>
-            </div>
-            {/* <div className="container mx-auto flex flex-row py-10">
-                <div className="w-1/2 pr-10 -mt-40">
-                    <div className="rounded-lg h-80 overflow-hidden">
-                        <img src={wixPortfolio} alt="angularBootstrap" width="100%" />
-                    </div>
-                </div>
-                <div className="w-1/2 pl-10">
-                    <div className="rounded-lg h-80 overflow-hidden">
-                        <img src={dummy} alt="angularBootstrap" width="100%" />
-                    </div>
-                </div>
-            </div> */}
         </section>
     )
 }
