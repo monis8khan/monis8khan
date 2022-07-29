@@ -28,7 +28,7 @@ export const Hero = ({ icons }) => {
                 </div>
             </div>
             {/* <!-- image section --> */}
-            <div className="shadow-2xl shadow-red-900 rounded-full md:w-1/2 hover:-translate-y-6">
+            <div className="shadow-2xl shadow-red-900 rounded-full md:w-1/2" id="CoverImg">
                 {/* <!-- shape --> */}
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#9B0000"

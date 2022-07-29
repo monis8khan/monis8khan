@@ -9,7 +9,7 @@ import { useState } from "react";
 
 //-- 
 import angularBootstrap from './components/assets/angularPortfolio.png'
-import bodykits4u from './components/assets/bodykits4u.PNG'
+// import bodykits4u from './components/assets/bodykits4u.PNG'
 import tailwind from './components/assets/tailwind.PNG'
 import wixPortfolio from './components/assets/wixPortfolio.png'
 import dummy from './components/assets/dummy.png'

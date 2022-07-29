@@ -27,15 +27,24 @@ html {
   background-size: 220px;
   background-position: 3% 4%;
 }
+#CoverImg{
+	animation: float 6s ease-in-out infinite;
+}
 
 #CTA {
   background-image: url('../src/components/assets/dotsCTA.svg');
   background-repeat: no-repeat;
   background-size: 150px;
   background-position: 85% 20%;
+	animation: float 6s ease-in-out infinite;
 }
 
-
+#About{
+  background-image: url('../src/components/assets/dots.svg');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: 95% 90%;
+}
 
 .hamburger{
   cursor: pointer;
@@ -77,4 +86,35 @@ html {
 
 .open .hamburger-bottom{
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+@media only screen and (max-width: 595px) {
+  
+#Hero {
+  background-size: 120px;
+  background-position: 95% 98%;
+}
+#About{
+  background-size: 90px;
+  background-position: 0% 90%;
+}
+
+#CTA {
+  background-size: 90px;
+}
+}
+
+
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }

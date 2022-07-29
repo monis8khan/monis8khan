@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import angularBootstrap from '../assets/angularPortfolio.png'
 export const PortfolioCard = ({ portfolio }) => {
     const [hide, setHide] = useState({
         showBox: false
