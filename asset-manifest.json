@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/monis8khan.github.io/static/css/main.edcd62f3.css",
-    "main.js": "/monis8khan.github.io/static/js/main.d92fe43c.js",
-    "static/js/787.3982383a.chunk.js": "/monis8khan.github.io/static/js/787.3982383a.chunk.js",
-    "static/media/dummy.png": "/monis8khan.github.io/static/media/dummy.f8985a777d3b1069bf19.png",
-    "static/media/angularPortfolio.png": "/monis8khan.github.io/static/media/angularPortfolio.73a85d530bd8189987d6.png",
-    "static/media/wixPortfolio.png": "/monis8khan.github.io/static/media/wixPortfolio.6a1b36db66108017fd34.png",
-    "static/media/tailwind.PNG": "/monis8khan.github.io/static/media/tailwind.30201e54276b9955bce4.PNG",
-    "static/media/dots.svg": "/monis8khan.github.io/static/media/dots.e775762b3f8a368c850f.svg",
-    "static/media/dotsCTA.svg": "/monis8khan.github.io/static/media/dotsCTA.75be274330907471f8ab.svg",
-    "index.html": "/monis8khan.github.io/index.html",
-    "main.edcd62f3.css.map": "/monis8khan.github.io/static/css/main.edcd62f3.css.map",
-    "main.d92fe43c.js.map": "/monis8khan.github.io/static/js/main.d92fe43c.js.map",
-    "787.3982383a.chunk.js.map": "/monis8khan.github.io/static/js/787.3982383a.chunk.js.map"
+    "main.css": "/monis8khan.github.io/monis8khan/static/css/main.0e724346.css",
+    "main.js": "/monis8khan.github.io/monis8khan/static/js/main.271d1e8c.js",
+    "static/js/787.3982383a.chunk.js": "/monis8khan.github.io/monis8khan/static/js/787.3982383a.chunk.js",
+    "static/media/dummy.png": "/monis8khan.github.io/monis8khan/static/media/dummy.f8985a777d3b1069bf19.png",
+    "static/media/angularPortfolio.png": "/monis8khan.github.io/monis8khan/static/media/angularPortfolio.73a85d530bd8189987d6.png",
+    "static/media/wixPortfolio.png": "/monis8khan.github.io/monis8khan/static/media/wixPortfolio.6a1b36db66108017fd34.png",
+    "static/media/tailwind.PNG": "/monis8khan.github.io/monis8khan/static/media/tailwind.30201e54276b9955bce4.PNG",
+    "static/media/dots.svg": "/monis8khan.github.io/monis8khan/static/media/dots.e775762b3f8a368c850f.svg",
+    "static/media/dotsCTA.svg": "/monis8khan.github.io/monis8khan/static/media/dotsCTA.75be274330907471f8ab.svg",
+    "index.html": "/monis8khan.github.io/monis8khan/index.html",
+    "main.0e724346.css.map": "/monis8khan.github.io/monis8khan/static/css/main.0e724346.css.map",
+    "main.271d1e8c.js.map": "/monis8khan.github.io/monis8khan/static/js/main.271d1e8c.js.map",
+    "787.3982383a.chunk.js.map": "/monis8khan.github.io/monis8khan/static/js/787.3982383a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edcd62f3.css",
-    "static/js/main.d92fe43c.js"
+    "static/css/main.0e724346.css",
+    "static/js/main.271d1e8c.js"
   ]
 }
