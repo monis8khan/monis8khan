@@ -46,7 +46,7 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div className="md:hidden">
+            <div className="md:hidden" style={{zIndex:1}}>
                 <div id="menu"
                     className="absolute flex-col items-center hidden self-end py-10 mt-20 space-y-6 font-bold bg-skin-fill sm:w-auto sm:self-center left-6 right-6 drop-shadow-md text-white">
                     <a href="#About">

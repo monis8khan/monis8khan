@@ -23,8 +23,8 @@ export const Hero = ({ icons }) => {
 
                 {/* <!-- hire now and email button --> */}
                 <div className="w-full pt-10">
-                    <Button text={"Hire Now!"} btnPrimary={true} link="#Home" />
-                    <Button text={"Book a Meeting!"} link="#Home" />
+                    <Button text={"Hire Now!"} btnPrimary={true} link="https://www.upwork.com/freelancers/~01998f62fb85045982" />
+                    <Button text={"Book a Meeting!"} link="https://calendly.com/monis8khan" />
                 </div>
             </div>
             {/* <!-- image section --> */}

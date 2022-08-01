@@ -146,11 +146,13 @@ function App() {
       <Services services={services} />
       <CTA title="Want to discuss about your project?"
         desc="Lets talk in detail, I am free tomorrow. Can you do?"
-        btnText="Book A Meeting!" />
-      <Portfolio portfolios={portfolios}/>
+        btnText="Book A Meeting!"
+        link="https://calendly.com/monis8khan" />
+      <Portfolio portfolios={portfolios} />
       <CTA title="Lets get your project done!"
         desc="If it is what you require? Hit me up right now!"
-        btnText="Hire Me Now!" />
+        btnText="Hire Me Now!"
+        link="https://www.upwork.com/freelancers/~01998f62fb85045982" />
       <Footer icons={icons} />
     </div>
   );
