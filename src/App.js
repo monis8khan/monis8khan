@@ -22,29 +22,20 @@ function App() {
     {
       id: 1,
       name: "Web Designing",
-      description: `A creative and attractive website can not only showcase the
-        creative side of your brand but also elaborate what you specialize in.
-        I will Design your website the way you want, either a landing page to a full E-Commerce
-        Application, using different themes or PSD, XD, Figma mockups.`,
-      image: "https://reboot.flowhcm.com/ThemeLayout/images/undraw/posting-photo.png"
+      description: `With my design skills I can create perfect UI/UX for your websites`,
+      image: "https://img.icons8.com/ios/100/000000/windows10-personalization.png"
     },
     {
       id: 2,
-      name: "Web Engineering",
-      description: `A creative and attractive website can not only showcase the
-        creative side of your brand but also elaborate what you specialize in.
-        I will Design your website the way you want, either a landing page to a full E-Commerce
-        Application, using different themes or PSD, XD, Figma mockups.`,
-      image: "https://reboot.flowhcm.com/ThemeLayout/images/undraw/posting-photo.png"
+      name: "Web Development",
+      description: `Develop webstores, Integrate 3rd party services with your website using Restful APIs.`,
+      image: "https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-development-web-design-and-development-flatart-icons-outline-flatarticons-2.png"
     },
     {
       id: 3,
-      name: "Web Engineering",
-      description: `A creative and attractive website can not only showcase the
-        creative side of your brand but also elaborate what you specialize in.
-        I will Design your website the way you want, either a landing page to a full E-Commerce
-        Application, using different themes or PSD, XD, Figma mockups.`,
-      image: "https://reboot.flowhcm.com/ThemeLayout/images/undraw/posting-photo.png"
+      name: "Solution to the problem",
+      description: `What I emphasize most is finding a long lasting oslution to the problem people are facing, rather than just implementing a temporary solution.`,
+      image: "https://img.icons8.com/external-wanicon-lineal-wanicon/64/000000/external-development-business-model-canvas-wanicon-lineal-wanicon.png"
     }
   ])
   //-- data for icons 
