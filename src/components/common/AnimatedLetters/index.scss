@@ -18,6 +18,6 @@
 
 @for $i from 1 through 99 {
     .text-animate._#{$i}{
-        animation-delay: #{$i/10}s ;
+        animation-delay: calc($i/10)s ;
     }
 }

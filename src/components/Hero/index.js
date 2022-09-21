@@ -17,12 +17,12 @@ const Hero = ({ icons }) => {
             <div className="flex flex-col justify-center text-skin-base text-center mt-10 md:text-left md:w-1/2 md:mt-0 text-xs md:text-lg">
                 {/* <!-- intro  --> */}
 
-                <AnimatedLetters strArray={"Hello, I am".split("")} idx={15} lettersClass={letterClass}> </AnimatedLetters>
+                <AnimatedLetters strArray={"Hello, I am".split("")} idx={1} lettersClass={letterClass}> </AnimatedLetters>
                 
                 <h1 className="font-bold text-3xl md:text-5xl uppercase">
                     <AnimatedLetters strArray={"Monis".split("")} idx={15} lettersClass={letterClass}> </AnimatedLetters>
                     <br />
-                    <AnimatedLetters strArray={"Hasan  Khan".split('')} idx={15} lettersClass={letterClass}></AnimatedLetters>
+                    <AnimatedLetters strArray={"Hasan  Khan".split('')} idx={30} lettersClass={letterClass}></AnimatedLetters>
                 </h1>
                 <AnimatedLetters strArray={"Developer | JavaScript | TailwindCSS | Angular | Typescript | Linux".split('')} idx={15} lettersClass={letterClass}></AnimatedLetters>
 
