@@ -1,6 +1,6 @@
-import { ServiceCard } from "./common/ServiceCard"
+import { ServiceCard } from "../common/ServiceCard"
 
-export const Services = ({services}) => {
+const Services = ({services}) => {
     return (
         <section className="text-skin-base font-poppins" id="Services">
             <div className="container px-5 py-24 mx-auto text-center">
@@ -12,3 +12,5 @@ export const Services = ({services}) => {
         </section>
     )
 }
+
+export default Services;

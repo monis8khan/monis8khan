@@ -1,6 +1,6 @@
-import { Button } from "./common/Button"
+import { Button } from "../common/Button"
 
-export const Header = () => {
+const Header = () => {
     const menuHandler = (event) => {
         const btn = document.getElementById("menu-btn")
         const nav = document.getElementById('menu')
@@ -69,3 +69,4 @@ export const Header = () => {
         </header>
     )
 }
+export default Header;

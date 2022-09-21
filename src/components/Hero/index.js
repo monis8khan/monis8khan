@@ -1,19 +1,30 @@
+import { Button } from '../common/Button'
+import { SocialIcons } from '../common/SocialIcons'
+import AnimatedLetters from '../common/AnimatedLetters'
+import { useEffect, useState } from 'react'
 
-import { Button } from './common/Button'
-import { SocialIcons } from './common/SocialIcons'
-
-export const Hero = ({ icons }) => {
+const Hero = ({ icons }) => {
+    const [letterClass, setLetterClass] = useState('text-animate');
+    useEffect(() => {
+        setTimeout(() => {
+            return setLetterClass('text-animate-hover')
+        }, 2000)
+    }, [])
 
     return (
         <div className="container mx-auto flex flex-col-reverse md:flex-row mt-10 px-2" id="Hero">
             {/* <!-- intro and social buttons --> */}
             <div className="flex flex-col justify-center text-skin-base text-center mt-10 md:text-left md:w-1/2 md:mt-0 text-xs md:text-lg">
                 {/* <!-- intro  --> */}
-                Hello, I am
-                <span className="font-bold text-3xl md:text-5xl uppercase">
-                    Monis <br />Hasan Khan
-                </span>
-                Developer | JavaScript | TailwindCSS | Angular | Typescript | Linux
+
+                <AnimatedLetters strArray={"Hello, I am".split("")} idx={15} lettersClass={letterClass}> </AnimatedLetters>
+                
+                <h1 className="font-bold text-3xl md:text-5xl uppercase">
+                    <AnimatedLetters strArray={"Monis".split("")} idx={15} lettersClass={letterClass}> </AnimatedLetters>
+                    <br />
+                    <AnimatedLetters strArray={"Hasan  Khan".split('')} idx={15} lettersClass={letterClass}></AnimatedLetters>
+                </h1>
+                <AnimatedLetters strArray={"Developer | JavaScript | TailwindCSS | Angular | Typescript | Linux".split('')} idx={15} lettersClass={letterClass}></AnimatedLetters>
 
 
                 {/* <!-- social icons --> */}
@@ -40,3 +51,6 @@ export const Hero = ({ icons }) => {
         </div>
     )
 }
+
+
+export default Hero;

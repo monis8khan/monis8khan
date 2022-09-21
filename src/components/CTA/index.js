@@ -1,6 +1,6 @@
-import { Button } from "./common/Button"
+import { Button } from "../common/Button"
 
-export const CTA = ({title, desc, btnText, link}) => {
+const CTA = ({title, desc, btnText, link}) => {
   return (
     <section id="CTA" className="w-full bg-skin-button-accent items-center py-10 md:px-20">
         <div className="container mx-auto flex flex-col items-center text-center">
@@ -17,3 +17,5 @@ export const CTA = ({title, desc, btnText, link}) => {
     </section>
   )
 }
+
+export default CTA;

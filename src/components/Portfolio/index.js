@@ -1,9 +1,9 @@
 import React from 'react'
-import { PortfolioCard } from './common/PortfolioCard'
-import { Button } from './common/Button'
+import { PortfolioCard } from '../common/PortfolioCard'
+import { Button } from '../common/Button'
 
 
-export const Portfolio = ({ portfolios }) => {
+const Portfolio = ({ portfolios }) => {
     return (
         <section id="Portfolio" className="m-10">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 text-center md:text-left">
@@ -24,3 +24,5 @@ export const Portfolio = ({ portfolios }) => {
         </section>
     )
 }
+
+export default Portfolio;

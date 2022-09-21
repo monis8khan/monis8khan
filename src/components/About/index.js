@@ -1,5 +1,5 @@
 
-export const About = () => {
+const About = () => {
     return (
         <section className="text-skin-base font-poppins m-10" id="About">
             <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center md:p-20">
@@ -34,3 +34,5 @@ export const About = () => {
 
     )
 }
+
+export default About;

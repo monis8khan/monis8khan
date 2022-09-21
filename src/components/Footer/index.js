@@ -1,7 +1,7 @@
 import React from 'react'
-import { SocialIcons } from './common/SocialIcons'
+import { SocialIcons } from '../common/SocialIcons'
 
-export const Footer = ({ icons }) => {
+const Footer = ({ icons }) => {
     return (
         <footer className="">
             <div className="container mx-auto flex flex-col-reverse md:flex-row text-center md:text-left">
@@ -49,3 +49,5 @@ export const Footer = ({ icons }) => {
         </footer>
     )
 }
+
+export default Footer;
