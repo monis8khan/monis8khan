@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+import AnimatedLetters from "../common/AnimatedLetters"
 import { Button } from "../common/Button"
 
 const Header = () => {
@@ -8,11 +10,18 @@ const Header = () => {
         nav.classList.toggle('flex')
         nav.classList.toggle('hidden')
     }
+    const [letterClass, setLetterClass] = useState('text-animate');
+    useEffect(() => {
+        setTimeout(() => {
+            return setLetterClass('text-animate-hover')
+        }, 2000)
+    }, [])
+
     return (
         <header className="mx-auto px-0 flex flex-row">
             <div className="px-10 py-10 w-2/4">
-                <h1 className="text-skin-base text-lg font-semibold hover:text-skin-muted">
-                    <a href="#Home">Monis8Khan</a>
+                <h1 className="text-skin-base text-lg font-semibold">
+                    <a href="#Home"><AnimatedLetters strArray={"Monis8Khan".split("")} idx={1} lettersClass={letterClass}> </AnimatedLetters></a>
                 </h1>
             </div>
             <div className="w-2/4 flex md:hidden justify-end items-center p-10">
