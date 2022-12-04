@@ -1,11 +1,20 @@
+import { useState, useEffect } from "react";
+import AnimatedLetters from "../common/AnimatedLetters";
 
 const About = () => {
+    const [letterClass, setLetterClass] = useState('text-animate');
+    useEffect(() => {
+        setTimeout(() => {
+            return setLetterClass('text-animate-hover')
+        }, 2000)
+    }, [])
+
     return (
         <section className="text-skin-base font-poppins m-10" id="About">
             <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center md:p-20">
 
                 <h1 className="text-skin-base text-lg md:text-4xl font-semibold md:px-10 py-10 uppercase">
-                    Brief Introduction
+                    <AnimatedLetters strArray={"Brief Introduction".split("")} idx={1} lettersClass={letterClass}> </AnimatedLetters>
                 </h1>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" className="inline-block w-4 h-4 md:w-8 md:h-8 text-gray-400 mb-8"
                     viewBox="0 0 975.036 975.036">
@@ -14,8 +23,9 @@ const About = () => {
                     </path>
                 </svg>
                 <p className="leading-relaxed text-xs md:text-lg">
-                    {`Hello I am Monis (some friends call me dev-egg), a JavaScript developer. I have more than 2 years of experience in website development over different 
-                    platforms like Wix/EditorX, Angular, React.`}
+                    
+                <AnimatedLetters strArray={`Hello I am Monis (some friends call me dev-egg), a JavaScript developer. I have more than 2 years of experience in website development over different 
+                    platforms like Wix/EditorX, Angular, React.`.split("")} idx={1} lettersClass={letterClass}> </AnimatedLetters>
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-skin-button-accent-hover mt-8 mb-6"></span>
                 <h2 className="text-skin-inverted font-medium title-font tracking-wider text-sm flex flex-col">
