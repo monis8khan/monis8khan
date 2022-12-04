@@ -12,7 +12,8 @@ import angularBootstrap from './components/assets/angularPortfolio.png'
 // import bodykits4u from './components/assets/bodykits4u.PNG'
 import tailwind from './components/assets/tailwind.PNG'
 import wixPortfolio from './components/assets/wixPortfolio.png'
-import dummy from './components/assets/dummy.png'
+// import dummy from './components/assets/dummy.png'
+// import tmh from './components/assets/trustmentalhealth.png'
 
 
 function App() {
@@ -101,7 +102,13 @@ function App() {
       image: angularBootstrap,
       name: "Angular Bootstrap Portfolio",
       url: "https://monis8khan.github.io/get_bootstrapped/",
-    },
+    },    
+    // {
+    //   id: "6",
+    //   image: tmh,
+    //   name: "Trust Mental Health",
+    //   url: "#",
+    // },
     // {
     //   id: "2",
     //   image: bodykits4u,
@@ -120,12 +127,12 @@ function App() {
       name: "React Tailwind Portfolio!",
       url: "#",
     },
-    {
-      id: "5",
-      image: dummy,
-      name: "Dummy Website",
-      url: "#",
-    }
+    // {
+    //   id: "5",
+    //   image: dummy,
+    //   name: "Dummy Website",
+    //   url: "#",
+    // },
   ])
 
 
