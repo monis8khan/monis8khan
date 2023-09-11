@@ -1,7 +1,7 @@
 # Welcome to My Git Profile
 ### Monis8khan
 
-I am Javascript developer with great skills in customization of wix/editorX websites using Velo-Api. I can integrate 3rd party applications in your wix website using rest APIs. I can create custom functionality using wix-collections & velo code.
+I am Javascript developer with great skills in different JavaScript related frameworks, including Angular, ReactJs, AdonisJS.. etc
 
 Checkout my React + Tailwind Project ---- https://monis8khan.github.io/monis8khan/
 
